@@ -1,12 +1,15 @@
 #include <iostream>
-#include<cmath>
-#include<numbers>
+#include <cmath>
 using namespace std;
 
 int main() {
-    int a,b;
-    cin>>a;
-    cin>>b;
-    cout<<2*pow(sin(3*3.14-2*a),2)*pow(cos(5*3.14-2*a),2)<<endl;
-    cout<<0.25-0.25*sin(2.5*3.14-8*a)<<endl;
+    double a,b,c,d;
+    cin>>a>>b>>c>>d;
+    if (a<=b<=c<=d)
+        cout<<max(max(a,b),max(d,c))<<max(max(a,b),max(d,c))<<max(max(a,b),max(d,c))<<max(max(a,b),max(d,c));
+     if (a>b>c>d)
+        cout<<a<<b<<c<<d;
+     else
+        cout<<a*a<<b*b<<c*c<<d*d;
+
 }
